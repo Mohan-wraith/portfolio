@@ -1,35 +1,7 @@
 export const projects = [
   {
-    id: "cinephile-tv",
-    index: "01",
-    title: "Cinephile TV",
-    tagline: "TV show discovery, powered by data.",
-    type: "Full-Stack Application",
-    typeColor: "text-sky-400 bg-sky-400/10 border-sky-400/20",
-    summary:
-      "A production full-stack platform for discovering, filtering, and rating TV shows — built on a live IMDb dataset with a custom FastAPI backend and a Next.js 14 frontend.",
-    bullets: [
-      "Designed a Supabase PostgreSQL schema (shows, episodes, ratings) with optimised queries for fuzzy search, multi-filter, and rating aggregation.",
-      "Built a FastAPI backend with fallback query logic and pagination, deployed on Render's free tier with UptimeRobot keep-alive.",
-      "Delivered a server-side-rendered Next.js 14 frontend on Vercel with dynamic routing and real-time filtering.",
-      "Managed the full DevOps lifecycle — migrated backend from Railway to Render, handling environment variables, CORS, and cold-start latency.",
-    ],
-    stack: ["Next.js 14", "FastAPI", "Supabase", "PostgreSQL", "Vercel", "Render", "Python"],
-    metrics: [
-      { label: "Status", value: "Live" },
-      { label: "Database", value: "Supabase" },
-      { label: "Dataset", value: "IMDb" },
-    ],
-    links: {
-      demo: "https://cinephile-tv.vercel.app",
-      github: "https://github.com/Mohan-wraith/cinephile-tv",
-    },
-    accentFrom: "#0ea5e9",
-    accentTo: "#0fbf92",
-  },
-  {
     id: "gos-mumbai",
-    index: "02",
+    index: "01",
     title: "Green Space Inequity in Mumbai",
     tagline: "Satellite imagery meets deep learning.",
     type: "Deep Learning / Research",
@@ -57,7 +29,7 @@ export const projects = [
   },
   {
     id: "falcon9",
-    index: "03",
+    index: "02",
     title: "Falcon 9 Landing Prediction",
     tagline: "ML pipeline for launch cost estimation.",
     type: "Data Science",
@@ -83,20 +55,47 @@ export const projects = [
     accentFrom: "#f59e0b",
     accentTo: "#0fbf92",
   },
+  {
+    id: "cinephile-tv",
+    index: "03",
+    title: "Cinephile TV",
+    tagline: "TV show discovery, powered by data.",
+    type: "Full-Stack Application",
+    typeColor: "text-sky-400 bg-sky-400/10 border-sky-400/20",
+    summary:
+      "A production full-stack platform for discovering, filtering, and rating TV shows — built on a live IMDb dataset with a custom FastAPI backend and a Next.js 14 frontend.",
+    bullets: [
+      "Designed a Supabase PostgreSQL schema (shows, episodes, ratings) with optimised queries for fuzzy search, multi-filter, and rating aggregation.",
+      "Built a FastAPI backend with fallback query logic and pagination, deployed on Render's free tier with UptimeRobot keep-alive.",
+      "Delivered a server-side-rendered Next.js 14 frontend on Vercel with dynamic routing and real-time filtering.",
+      "Managed the full DevOps lifecycle — migrated backend from Railway to Render, handling environment variables, CORS, and cold-start latency.",
+    ],
+    stack: ["Next.js 14", "FastAPI", "Supabase", "PostgreSQL", "Vercel", "Render", "Python"],
+    metrics: [
+      { label: "Status", value: "Live" },
+      { label: "Database", value: "Supabase" },
+      { label: "Dataset", value: "IMDb" },
+    ],
+    links: {
+      demo: "https://cinephile-tv.vercel.app",
+      github: "https://github.com/Mohan-wraith/cinephile-tv",
+    },
+    accentFrom: "#0ea5e9",
+    accentTo: "#0fbf92",
+  },
 ];
 
 export const skills = {
-  "Languages": ["Python", "JavaScript", "TypeScript", "SQL"],
-  "Frontend": ["Next.js", "React", "Tailwind CSS", "Recharts"],
-  "Backend": ["FastAPI", "Flask", "Node.js", "REST APIs"],
   "Data & ML": ["TensorFlow", "Keras", "Scikit-learn", "Pandas", "NumPy"],
-  "Databases": ["PostgreSQL", "Supabase", "SQL"],
-  "Infrastructure": ["Vercel", "Render", "Hugging Face", "Docker", "Git"],
   "Specialisms": ["Deep Learning", "Computer Vision", "Semantic Segmentation", "Remote Sensing"],
+  "Languages": ["Python", "SQL", "JavaScript", "TypeScript"],
+  "Visualisation": ["Plotly Dash", "Recharts", "Matplotlib", "Power BI"],
+  "Backend & APIs": ["FastAPI", "Flask", "REST APIs", "Node.js"],
+  "Infrastructure": ["PostgreSQL", "Supabase", "Vercel", "Hugging Face", "Docker", "Git"],
 };
 
 export const stats = [
-  { value: "3", label: "Production projects" },
   { value: "93.72%", label: "Thesis model accuracy" },
+  { value: "3", label: "End-to-end ML projects" },
   { value: "M.Sc.", label: "Data Science, GITAM" },
 ];

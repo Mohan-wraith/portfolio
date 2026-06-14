@@ -1,12 +1,12 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Mohan Devendra — Full-Stack Developer & Data Scientist",
+  title: "Mohan Devendra — Aspiring Data Scientist",
   description:
-    "Portfolio of M. Mohan Devendra — building full-stack applications and data science systems that ship to production.",
+    "Portfolio of M. Mohan Devendra — M.Sc. Data Science graduate building deep learning systems and end-to-end ML pipelines.",
   openGraph: {
     title: "Mohan Devendra",
-    description: "Full-Stack Developer & Data Scientist",
+    description: "Aspiring Data Scientist — M.Sc. Data Science, GITAM University",
     type: "website",
   },
 };

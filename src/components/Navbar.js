@@ -11,10 +11,16 @@ const links = [
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 40);
+    const handler = () => {
+      setScrolled(window.scrollY > 40);
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setProgress(max > 0 ? (window.scrollY / max) * 100 : 0);
+    };
     window.addEventListener("scroll", handler, { passive: true });
+    handler();
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
@@ -65,6 +71,14 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+
+      {/* Scroll progress indicator */}
+      <div className="h-px w-full bg-white/5">
+        <div
+          className="h-full transition-[width] duration-150 ease-out"
+          style={{ width: `${progress}%`, backgroundColor: "var(--brand)" }}
+        />
+      </div>
     </header>
   );
 }
