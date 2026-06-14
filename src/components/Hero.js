@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { stats } from "@/data/projects";
+import { stats, resumeUrl } from "@/data/projects";
 
 const roles = ["Data Science", "Deep Learning", "Machine Learning", "Computer Vision"];
 
@@ -71,7 +71,7 @@ export default function Hero() {
 
         {/* Subheading */}
         <p className="text-lg text-neutral-400 max-w-xl leading-relaxed mb-10 animate-fade-up animate-delay-100">
-          M. Mohan Devendra — M.Sc. Data Science graduate from GITAM University,
+          M.Sc. Data Science graduate from GITAM University (2024–2026),
           building deep learning systems and end-to-end ML pipelines that go
           from research notebook to production.
         </p>
@@ -87,6 +87,16 @@ export default function Hero() {
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="transition-transform duration-300 group-hover:translate-x-1">
               <path d="M3 7h8M7.5 3.5L11 7l-3.5 3.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
+          </a>
+          <a
+            href={resumeUrl}
+            download
+            className="group inline-flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 text-neutral-300 text-sm transition-all duration-300 hover:border-white/30 hover:text-white hover:bg-white/5"
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="transition-transform duration-300 group-hover:translate-y-0.5">
+              <path d="M7 1v8M3.5 6L7 9.5 10.5 6M2 12h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            Download Resume
           </a>
           <a
             href="#contact"
